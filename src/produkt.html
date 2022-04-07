@@ -280,7 +280,7 @@
     <!-- Navigation slut -->
 
     <!-- Content -->
-    <div class="bg-white">
+    <div  class="bg-white">
         <div class="pt-6">
             <nav aria-label="Breadcrumb">
                 <ol role="list" class="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -314,27 +314,27 @@
             </nav>
 
             <!-- Image gallery -->
-            <div class="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div itemscope itemtype="https://schema.org/Poster" class="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
                 <div class="hidden aspect-w-3 aspect-h-4 overflow-hidden lg:block">
-                    <img src="content/posters/poster-3.jpg" alt="Højt på en gren"
+                    <img itemprop="image" src="content/posters/poster-3.jpg" alt="Højt på en gren"
                         class="w-full h-full object-center object-cover">
                 </div>
                 <div class="hidden aspect-w-3 aspect-h-4 overflow-hidden lg:block">
-                    <img src="content/kalvebod-poster-vaeg.jpg" alt="Højt på en gren"
+                    <img itemprop="image" src="content/kalvebod-poster-vaeg.jpg" alt="Højt på en gren"
                         class="w-full h-full object-center object-cover">
                 </div>
                 <div class="aspect-w-4 aspect-h-5 sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
-                    <img src="content/kalvebod-poster.jpg" alt="Højt på en gren"
+                    <img itemprop="image" src="content/kalvebod-poster.jpg" alt="Højt på en gren"
                         class="w-full h-full object-center object-cover">
                 </div>
             </div>
 
             <!-- Product info -->
-            <div
+            <div 
                 class="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
                 <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-                    <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Højt på en gren / Edgar
-                        Poe</h1>
+                    <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl"> <span itemprop="name">Højt på en gren </span> / <span itemprop="author"> Edgar
+                        Poe </span></h1>
                 </div>
 
                 <!-- Options -->
@@ -387,7 +387,7 @@
                                 </svg>
                             </div>
                             <p class="sr-only">4 out of 5 stars</p>
-                            <a href="#" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">2
+                            <a href="#" class="ml-3 text-sm font-medium text-slate-900 hover:text-slate-700">2
                                 anmeldelser</a>
                         </div>
                     </div>
@@ -470,7 +470,7 @@
 
                                     <!-- Active: "ring-2 ring-indigo-500" -->
                                     <label
-                                        class="group relative border  py-3 px-4 flex items-center justify-center text-sm text-center font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer ring-2 ring-indigo-500">
+                                        class="group relative border  py-3 px-4 flex items-center justify-center text-sm text-center font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer ring-2 ring-slate-900">
                                         <input type="radio" name="size-choice" value="70x100" class="sr-only"
                                             aria-labelledby="size-choice-1-label">
                                         <p id="size-choice-1-label">70<br> x <br>100</p>
@@ -526,7 +526,7 @@
                         </div>
 
                         <button type="submit"
-                            class="mt-10 w-full bg-indigo-600 border border-transparent py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Læg
+                            class="mt-10 w-full bg-slate-900 border border-transparent py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 ">Læg
                             i kurv</button>
                     </form>
                 </div>
@@ -575,6 +575,27 @@
             </div>
         </div>
     </div>
+    <hr>
+
+    <section>
+        <h3 class="pl-36 text-3xl font-bold py-5">Andre kunder købte også...</h3>
+        <div class="grid grid-cols-4 px-28">
+            <a href="produkt.html">
+            <img class="p-5" src="content/posters/poster-24.jpg" alt="Flot plakat" role="img" /></a>
+            <a href="produkt.html">
+            <img class="p-5" src="content/posters/poster-8.jpg" alt="Flot plakat" role="img" /></a> 
+            <a href="produkt.html">
+            <img class="p-5" src="content/posters/poster-9.jpg" alt="Flot plakat" role="img" /></a> 
+            <a href="produkt.html">
+            <img class="p-5" src="content/posters/poster-11.jpg" alt="Flot plakat" role="img" /></a>
+          
+
+        </div>
+        <div class="grid place-content-center">
+        <button class="focus:outline-none focus:ring-offset-2 focus:ring border sm:border-transparent w-full sm:w-auto bg-slate-900 text-white py-4 px-6 hover:bg-slate-700 mt-5 mb-10">Se flere plakater her</button>
+    </div>
+    </section>
+
     <!-- Content slut-->
 
     <!-- Footer -->
