@@ -29,34 +29,276 @@
     }
   </style>
 <body>
-   
+    <div class="flex text-[0.6rem] bg-slate-900 text-white place-content-center gap-10 py-2">
+        <p>AFSENDELSE 1-2 HVERDAGE</p>
+        <p>FRI FRAGT TIL BUTIK V. KØB FOR 299.-</p>
+        <p>30 DAGES FULD RETURRET</p>
+        <p>MEDLEM AF 1% FOR THE PLANET</p>
+        <p>MERE END 50 FORSKELLIGE KUNSTNERE OG FORFATTERE</p>
+      </div>
+     <!-- Navigation -->
+  <div class="">
+    <div>
+      <div class="relative">
+        <!-- For md screen size -->
+        <div id="md-searchbar" class="bg-white  hidden lg:hidden py-5 px-6 items-center justify-between">
+          <div class="flex items-center space-x-3 text-gray-800 ">
+            <div>
+              <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2.svg" alt="search">
+              <img class=" hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2dark.svg"
+                alt="search">
+            </div>
+            <input type="text" placeholder="Søg efter"
+              class="text-sm leading-none   text-gray-600 focus:outline-none" />
+          </div>
+          <div class="space-x-6">
+            <button aria-label="view favourites"
+              class="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
+              <img class="w-5 " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
+                alt="favourites">
+              <img class="w-5  hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3dark.svg"
+                alt="favourites">
+            </button>
+            <button aria-label="go to cart" class="text-gray-800  focus:outline-none focus:ring-2 focus:ring-gray-800">
+              <img class="w-5 " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg" alt="bag">
+              <img class="w-5  hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4dark.svg"
+                alt="bag">
+            </button>
+          </div>
+        </div>
+        <!-- For md screen size -->
+
+        <!-- For large screens -->
+        <div class=" bg-gray-50 px-6 py-9">
+          <div class="container mx-auto flex items-center justify-between">
+            <h1 class="md:w-2/12 cursor-pointer text-gray-800 " aria-label="lunefuldlykke.dk">
+              <a href="index.html" class="font-extrabold">
+                <img class="min-h-[50px]" src="content/lunefuld-lykke.svg" alt="logo">
+              </a>
+            </h1>
+            <ul class="hidden w-8/12 md:flex items-center justify-center space-x-8">
+              <li>
+              <a href="shop.html"
+                class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Plakater</a>
+              </li>
+              <li>
+                <a href="litteratur.html"
+                  class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Litteratur</a>
+                </li>
+              <li>
+                <a href="inspiration.html"
+                  class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Inspiration</a>
+              </li>
+              <li>
+                <a href="om.html"
+                  class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Om
+                  os</a>
+              </li>
+              <li>
+                <a href="kunstnere.html"
+                  class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Kunstnere</a>
+              </li>
+            </ul>
+
+            <div class="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
+              <div class="hidden lg:flex items-center">
+                <button onclick="toggleSearch()" aria-label="search items"
+                  class="w-5 text-gray-800   focus:outline-none focus:ring-2 focus:ring-gray-800">
+                  <img class="transform rotate-90 "
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2.svg" alt="search">
+                  <img class="transform rotate-90  hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2dark.svg" alt="search">
+                </button>
+                <input id="searchInput" type="text" placeholder="Søg"
+                  class="hidden text-sm   text-gray-600 rounded ml-1 border border-transparent focus:outline-none focus:border-gray-400 px-1" />
+              </div>
+              <div class="hidden lg:flex items-center space-x-4 xl:space-x-8">
+                <button aria-label="view favourites"
+                  class="w-6 text-gray-800   focus:outline-none focus:ring-2 focus:ring-gray-800">
+                  <img class=" " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
+                    alt="favourites">
+                  <img class="  hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3dark.svg"
+                    alt="favourites">
+                </button>
+                <button aria-label="go to cart"
+                  class="w-6 text-gray-800   focus:outline-none focus:ring-2 focus:ring-gray-800">
+                  <img class=" " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg" alt="bag">
+                  <img class="  hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4dark.svg"
+                    alt="bag">
+                </button>
+              </div>
+
+              <div class="flex lg:hidden">
+                <button aria-label="show options" onclick="mdOptionsToggle()"
+                  class="text-black   hidden md:flex focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                  <img class=" " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5.svg"
+                    alt="toggler">
+                  <img class="  hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5dark.svg"
+                    alt="toggler">
+                </button>
+
+                <button aria-label="open menu" onclick="openMenu()"
+                  class="text-black   md:hidden focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                  <img class=" " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5.svg"
+                    alt="toggler">
+                  <img class="hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg5dark.svg"
+                    alt="toggler">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- For small screen -->
+        <div id="mobile-menu" class="hidden absolute  z-10 inset-0 md:hidden bg-white flex flex-col h-screen w-full">
+          <div class="flex items-center justify-between border-b border-gray-200  pb-4 p-4">
+            <div class="flex items-center space-x-3">
+              <div>
+                <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2.svg" alt="search">
+                <img class=" hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg2dark.svg"
+                  alt="search">
+              </div>
+              <input type="text" placeholder="Søg efter"
+                class="text-sm  text-gray-600 placeholder-gray-600  focus:outline-none" />
+            </div>
+
+            <button onclick="closeMenu()" aria-label="close menu"
+              class="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+              <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg6.svg" alt="cross">
+              <img class=" hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg6dark.svg"
+                alt="cross">
+            </button>
+          </div>
+          <div class="mt-6 p-4">
+            <ul class="flex flex-col space-y-6">
+              <li>
+                <a href="index.html"
+                  class=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                  Forside
+                  <div>
+                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
+                    <img class=" hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
+                      alt="arrow">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="shop.html"
+                  class=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                  Plakater
+                  <div>
+                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
+                    <img class=" hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
+                      alt="arrow">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="litteratur.html"
+                  class=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                  Litteratur
+                  <div>
+                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
+                    <img class=" hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
+                      alt="arrow">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="inspiration.html"
+                  class=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                  Inspiration
+                  <div>
+                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
+                    <img class=" hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
+                      alt="arrow">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="om.html"
+                  class=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                  Om os
+                  <div>
+                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
+                    <img class=" hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
+                      alt="arrow">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="kunstnere.html"
+                  class=" flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                  Kunstnere
+                  <div>
+                    <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7.svg" alt="arrow">
+                    <img class=" hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg7dark.svg"
+                      alt="arrow">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="h-full flex items-end">
+            <ul class="flex flex-col space-y-8 bg-gray-50 w-full py-10 p-4 ">
+              <li>
+                <a href="javascript:void(0)"
+                  class=" text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                  <div>
+                    <img class="w-5 " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4.svg"
+                      alt="bag">
+                    <img class="w-5  hidden"
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg4dark.svg" alt="bag">
+                  </div>
+                  <p class="text-base">Kurv</p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  class=" text-gray-800 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                  <div>
+                    <img class="w-5 " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3.svg"
+                      alt="favourites">
+                    <img class="w-5  hidden"
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-I-svg3dark.svg" alt="favourites">
+                  </div>
+                  <p class="text-base">Ønskeliste</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navigation slut -->
+
       
       <section>
         <div class="relative max-w-screen-xl px-4 py-8 mx-auto">
-          <div>
-            <h1 class="text-2xl font-bold lg:text-3xl">
+          <div class="grid place-content-center">
+            <h1 class="text-2xl font-bold lg:text-3xl my-10">
               Plakater hos Lunefuld Lykke er som at være der i virkeligheden!
             </h1>
-      
-            <p class="mt-1 text-sm text-gray-500">
-                Oplev vores tåge-kampagne helt tæt på
-            </p>
           </div>
+          <div class="grid place-content-center">
+            <p class="mt-1 text-lg text-gray-900 mb-10 text-center">
+                Se hvordan vores mange forskellige kunstnere har fanget tågen <br> - Det er næsten som at være der selv!
+            </p>
+           
+            </div>
+
+            <hr class="mb-10">
       
           <div class="grid gap-8 lg:items-start lg:grid-cols-4">
             <div class="lg:col-span-3">
-              <div class="relative mt-4 grid grid-cols-2 bg-slate-50 place-content-center">
-                  <div class="flex pl-10">
+              <div class="relative mt-4 bg-slate-50 place-content-center">
+                  <div class="pl-10">
                 <img
                   alt=""
-                  src="/src/content/bjerge-poster.jpg"
+                  src="/src/content/billedvaeg_krage.png"
                   class="w-full h-72 lg:h-[540px] object-cover p-5"
                 />
-                <img
-                  alt=""
-                  src="/src/content/kalvebod-poster 2.jpg"
-                  class="w-full h-72 lg:h-[540px] object-cover p-5"
-                />
+              
             </div>
       
 
@@ -73,22 +315,24 @@
                   </span>
                 </div>
               </div>
+
+              <h2 class="text-3xl font-semibold text-black my-10">Se hvordan andre kunstnere har fanget tågen:</h2>
       
-              <ul class="flex gap-1 mt-1">
-                <li>
-                  <img class="object-cover w-16 h-16 rounded-md" src="/src/content/mini.jpg" alt="" />
+              <ul class="flex gap-5 mt-1 bg-slate-50">
+                <li class="p-10">
+                  <img class="object-cover w-56  h-auto" src="/src/content/mini.jpg" alt="" />
                 </li>
       
-                <li>
-                    <img class="object-cover w-16 h-16 rounded-md" src="/src/content/trae.jpg" alt="" />
+                <li class="p-10">
+                    <img class="object-cover w-56  h-auto" src="/src/content/trae.jpg" alt="" />
                 </li>
       
-                <li>
-                    <img class="object-cover w-16 h-16 rounded-md" src="/src/content/kalvebod-poster-vaeg.jpg" alt="" />
+                <li class="p-10">
+                    <img class="object-cover  w-56 h-auto" src="/src/content/skoven.jpg" alt="" />
                 </li>
       
-                <li>
-                    <img class="object-cover w-16 h-16 rounded-md" src="/src/content/kalvebod-poster-vaeg.jpg" alt="" />
+                <li class="p-10">
+                    <img class="object-cover  w-56 h-auto" src="/src/content/bjerge.jpg" alt="" />
                 </li>
               </ul>
               
@@ -151,26 +395,26 @@
                 <div class="p-4 bg-gray-100 border rounded">
                   <p class="text-sm">
                     <span class="block">
-                      Pay as low as $3/mo with 0% APR.
+                        FRI FRAGT TIL BUTIK V. KØB FOR 299.-
                     </span>
       
                     <a href="" class="inline-block mt-1 underline">
-                      Find out more
+                      Læs mere om forsendelse her
                     </a>
                   </p>
                 </div>
       
                 <div>
                   <p class="text-xl font-bold">
-                    $19.99
+                    299 DKK
                   </p>
                 </div>
       
                 <button
                   type="submit"
-                  class="w-full px-6 py-3 text-sm font-bold tracking-wide text-white uppercase bg-red-700 rounded"
+                  class="w-full px-6 py-3 text-sm font-bold tracking-wide text-white uppercase bg-slate-900 rounded"
                 >
-                  Tilføj til kortet
+                  Bestil plakaten nu
                 </button>
       
                 <button
@@ -183,21 +427,23 @@
             </div>
       
             <div class="lg:col-span-3">
+                <h2 class="text-2xl font-semibold mb-4">Om Lunefuld Lykke</h2>
               <div class="prose max-w-none">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ad labore nostrum, a explicabo iste est dolorem deserunt id ullam magni accusamus saepe, nulla sed sint reiciendis, aperiam cumque officiis!</p>
+                <p>Lunefuld Lykke blev stiftet af Marie Moldova på en efterårsdag i 2019. Maries kæreste gennem det seneste halve år skred til fordel for en yngre model, og det kastede hende ud i en lettere krise. Vejret var dog flot, så hun tog et par flasker pullimut og sit gamle Rolleiflex kamera med en tur på Fælleden. Det blev til en serie flotte billeder, og vupti: Krisen blev skiftet ud med en ny interesse. Siden da har Marie mødt mange andre fotografer, der har brugt fotografiet som en vej ud af en krise. Og det blev starten på Lunefuld Lykke, og alle de melankolske plakater du kan købe her.</p>
       
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eveniet ipsam mollitia nesciunt illo! Suscipit, corrupti!</p>
-      
-                <h3>Features</h3>
+                <h3>Hos Lunefuld Lykke får du:</h3>
       
                 <ul>
-                  <li>Smooth neck design</li>
-                  <li>Breathable fabric</li>
-                  <li>Odour prevention</li>
-                  <li>Made from recycled materials</li>
+                  <li>FRI FRAGT TIL BUTIK V. KØB FOR 299.-</li>
+                  <li>AFSENDELSE 1-2 HVERDAGE</li>
+                  <li>30 DAGES FULD RETURRET</li>
+                  <li>VI ER MEDLEM AF 1% FOR THE PLANET</li>
+                  <li>MERE END 50 FORSKELLIGE KUNSTNERE OG FORFATTERE</li>
                 </ul>
       
-                <iframe src="https://www.youtube-nocookie.com/embed/Eb-Vfe61W6A?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div>
+                <iframe src="/src/content/video_lunefuldlykke.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
           </div>
